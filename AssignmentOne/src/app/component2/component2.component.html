@@ -1,0 +1,10 @@
+<div class="container mt-4">
+    <h2>Component 2</h2>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" [(ngModel)]="inputValue" (input)="onInputChange()" placeholder="Type something...">
+      <button class="btn btn-primary" type="button" (click)="resetInput()" [disabled]="isButtonDisabled">Reset</button>
+    </div>
+    <div *ngIf="inputValue" class="alert alert-info mt-3" role="alert">
+      You typed: {{ inputValue }}
+    </div>
+  </div>

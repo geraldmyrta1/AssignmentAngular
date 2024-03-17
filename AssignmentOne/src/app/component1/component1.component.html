@@ -1,0 +1,8 @@
+<div class="container mt-4">
+    <h2>Counter</h2>
+    <p class="lead">Current Count: {{ count }}</p>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary" (click)="increment()">Increase</button>
+      <button type="button" class="btn btn-primary" (click)="decrement()" [disabled]="count === 0">Decrease</button>
+    </div>
+  </div>
